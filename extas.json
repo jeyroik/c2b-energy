@@ -21,7 +21,14 @@
       "subject": "c2b.world",
       "methods": [
         "saturateEnergy",
-        "progressEnergy"
+        "progressEnergy",
+        "getIntensityPossible",
+        "incIntensityPossible",
+        "getSaturationRatio",
+        "incSaturationRatio",
+        "getCurrentEnergy",
+        "decCurrentEnergy",
+        "incCurrentEnergy"
       ]
     }
   ]

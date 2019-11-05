@@ -29,4 +29,47 @@ interface IWorldExtensionEnergy
      * @return void
      */
     public function progressEnergy();
+
+    /**
+     * @return int
+     */
+    public function getIntensityPossible(): int;
+
+    /**
+     * @param int $increment
+     *
+     * @return void
+     */
+    public function incIntensityPossible(int $increment);
+
+    /**
+     * @return int
+     */
+    public function getSaturationRatio(): int;
+
+    /**
+     * @param int $increment
+     *
+     * @return void
+     */
+    public function incSaturationRatio(int $increment);
+
+    /**
+     * @return int
+     */
+    public function getCurrentEnergy(): int;
+
+    /**
+     * @param int $decrement
+     *
+     * @return void
+     */
+    public function decCurrentEnergy(int $decrement);
+
+    /**
+     * @param int $increment
+     *
+     * @return void
+     */
+    public function incCurrentEnergy(int $increment);
 }
