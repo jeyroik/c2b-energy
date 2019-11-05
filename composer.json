@@ -1,0 +1,12 @@
+{
+  "name": "jeyroik/c2b-energy",
+  "description": "Energy package for c2b",
+  "require": {
+    "jeyroik/c2b-world": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "c2b\\": "src/"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "c2b/energy",
+  "plugins": [
+    {
+      "class": "c2b\\components\\plugins\\worlds\\mutations\\WorldMutationEnergy",
+      "stage": "world.mutation"
+    },
+    {
+      "class": "c2b\\components\\plugins\\resources\\PluginResourceEnergySaturation",
+      "stage": "world.energy.saturation"
+    },
+    {
+      "class": "c2b\\components\\plugins\\resources\\PluginResourceEnergyProgress",
+      "stage": "world.energy.progress"
+    }
+  ],
+  "extensions": [
+    {
+      "class": "c2b\\components\\extensions\\worlds\\WorldExtensionEnergy",
+      "interface": "c2b\\interfaces\\extensions\\worlds\\IWorldExtensionEnergy",
+      "subject": "c2b.world",
+      "methods": [
+        "saturateEnergy",
+        "progressEnergy"
+      ]
+    }
+  ]
+}
